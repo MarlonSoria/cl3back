@@ -37,11 +37,10 @@ public class DocenteServiceImpl implements DocenteService {
         if (object != null) {
             object.setNombre(docente.getNombre());
             object.setDni(docente.getDni());
-            object.setFch_nacimiento(docente.getFch_nacimiento());
             object.setSueldo(docente.getSueldo());
             object.setEmail(docente.getEmail());
             object.setSexo(docente.getSexo());
-            //object.setId_docente(docente.getId_docente());
+            object.setId_docente(docente.getId_docente());
             docenteRepository.save(object);
         }
 

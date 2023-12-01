@@ -24,11 +24,6 @@ public class Docente {
     @Column(name = "dni")
     private String dni;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    @Temporal(value = TemporalType.DATE)
-    @Column(name = "fch_nacimiento")
-    private Date fch_nacimiento;
-
     @Column(name = "sueldo")
     private double sueldo;
 
